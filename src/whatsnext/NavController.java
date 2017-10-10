@@ -9,13 +9,6 @@ package whatsnext;
  *
  * @author daw5510
  */
-public class WhatsNext {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        LoginController lc = new LoginController();
-    }
+public class NavController {
     
 }
