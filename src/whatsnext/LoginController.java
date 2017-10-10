@@ -5,10 +5,19 @@
  */
 package whatsnext;
 
+import java.util.ArrayList;
+import whatsnext.User;
 /**
  *
  * @author daw5510
  */
 public class LoginController {
+    private ArrayList<User> userList = new ArrayList<User>(); 
+//    private LoginUI lui = new LoginUI; 
+    
+    public LoginController(){
+        
+    }
+    
     
 }
