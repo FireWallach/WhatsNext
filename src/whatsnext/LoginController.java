@@ -8,6 +8,7 @@ package whatsnext;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
+import java.util.Arrays;
 import javax.swing.JButton;
 import whatsnext.User;
 import whatsnext.LoginUI;
@@ -40,7 +41,7 @@ public class LoginController {
     
     public Boolean authenticate(){
         for(int i = 0; i < userList.size(); i++){
-            if((userList.get(i).getUsername().equals(lui.getjTextField1().getText()))&&userList.get(i).getPassword().equals(lui.getjPasswordField2().getPassword())){
+            if((userList.get(i).getUsername().equals(lui.getjTextField1().getText()))&&(Arrays.equals(lui.getjPasswordField2().getPassword(), userList.get(i).getPassword().toCharArray()))){
                 return true;
             }
         }
