@@ -154,4 +154,18 @@ public class LoginUI extends javax.swing.JFrame {
     private java.awt.Label label1;
     private java.awt.Label label2;
     // End of variables declaration//GEN-END:variables
+
+    /**
+     * @return the jPasswordField2
+     */
+    public javax.swing.JPasswordField getjPasswordField2() {
+        return jPasswordField2;
+    }
+
+    /**
+     * @return the jTextField1
+     */
+    public javax.swing.JTextField getjTextField1() {
+        return jTextField1;
+    }
 }

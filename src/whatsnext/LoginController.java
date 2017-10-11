@@ -25,5 +25,13 @@ public class LoginController {
         
     }
     
+    private Boolean authenticate(){
+        for(int i = 0; i < userList.size(); i++){
+            if((userList.get(i).getUsername().equals(lui.getjTextField1()))&&(userList.get(i).getPassword().equals(lui.getjPasswordField2())))
+                return true;
+        }
+        return false;
+    }
+    
     
 }
