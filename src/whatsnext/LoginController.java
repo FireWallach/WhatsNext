@@ -5,7 +5,10 @@
  */
 package whatsnext;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
+import javax.swing.JButton;
 import whatsnext.User;
 import whatsnext.LoginUI;
 
@@ -23,13 +26,25 @@ public class LoginController {
         userList.add(new User("rabbits04", "angry"));
         lui.setVisible(true);
         
+        class ButtonListener implements ActionListener{
+        
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JButton clickSource = (JButton)e.getSource();
+                System.out.println(authenticate());
+            }
+        }
+        lui.addButtonListener(new ButtonListener());
+        
     }
     
-    private Boolean authenticate(){
+    public Boolean authenticate(){
         for(int i = 0; i < userList.size(); i++){
-            if((userList.get(i).getUsername().equals(lui.getjTextField1()))&&(userList.get(i).getPassword().equals(lui.getjPasswordField2())))
+            if((userList.get(i).getUsername().equals(lui.getjTextField1().getText()))&&userList.get(i).getPassword().equals(lui.getjPasswordField2().getPassword())){
                 return true;
+            }
         }
+        System.out.println("Username: " + lui.getjTextField1().getText() + "\nPassword: " + lui.getjPasswordField2().getPassword());
         return false;
     }
     

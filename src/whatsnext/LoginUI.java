@@ -5,6 +5,8 @@
  */
 package whatsnext;
 
+import java.awt.event.ActionListener;
+
 /**
  *
  * @author cxg5334
@@ -168,4 +170,9 @@ public class LoginUI extends javax.swing.JFrame {
     public javax.swing.JTextField getjTextField1() {
         return jTextField1;
     }
+    
+    public void addButtonListener(ActionListener al){
+        jButton1.addActionListener(al);
+    }
+    
 }
