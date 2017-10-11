@@ -32,7 +32,9 @@ public class LoginController {
             @Override
             public void actionPerformed(ActionEvent e) {
                 JButton clickSource = (JButton)e.getSource();
-                System.out.println(authenticate());
+                if(authenticate()){
+                    NavController nc = new NavController();
+                }
             }
         }
         lui.addButtonListener(new ButtonListener());
@@ -45,7 +47,7 @@ public class LoginController {
                 return true;
             }
         }
-        System.out.println("Username: " + lui.getjTextField1().getText() + "\nPassword: " + lui.getjPasswordField2().getPassword());
+        lui.getjLabel3().setText("Incorrect Username or Password");
         return false;
     }
     

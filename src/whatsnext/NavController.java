@@ -10,5 +10,9 @@ package whatsnext;
  * @author daw5510
  */
 public class NavController {
+
+    public NavController() {
+        System.exit(0);
+    }
     
 }
