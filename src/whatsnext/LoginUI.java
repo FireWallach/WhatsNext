@@ -19,6 +19,7 @@ public class LoginUI extends javax.swing.JFrame {
     public LoginUI() {
         initComponents();
         getRootPane().setDefaultButton(jButton1);
+        setResizable(false);
     }
 
     /**
