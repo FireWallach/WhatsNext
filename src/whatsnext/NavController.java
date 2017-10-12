@@ -10,9 +10,12 @@ package whatsnext;
  * @author daw5510
  */
 public class NavController {
-
+    
+    private NavUI nui;
+    
     public NavController() {
-        System.exit(0);
+        this.nui = new NavUI();
+        nui.setVisible(true);
     }
     
 }

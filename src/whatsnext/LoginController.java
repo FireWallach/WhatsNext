@@ -34,6 +34,7 @@ public class LoginController {
                 JButton clickSource = (JButton)e.getSource();
                 if(authenticate()){
                     NavController nc = new NavController();
+                    lui.setVisible(false);
                 }
             }
         }

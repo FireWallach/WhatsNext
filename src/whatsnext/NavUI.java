@@ -9,12 +9,12 @@ package whatsnext;
  *
  * @author cxg5334
  */
-public class MenuUI extends javax.swing.JFrame {
+public class NavUI extends javax.swing.JFrame {
 
     /**
      * Creates new form MenuUI
      */
-    public MenuUI() {
+    public NavUI() {
         initComponents();
     }
 
@@ -60,10 +60,10 @@ public class MenuUI extends javax.swing.JFrame {
             }
         });
 
-        jButton3.setIcon(new javax.swing.ImageIcon("up.ist.local\\Users\\cxg5334\\Desktop\\WhatsNext\\resources\\UserButton.png")); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/whatsnext/UserButton.png"))); // NOI18N
         jButton3.setPreferredSize(new java.awt.Dimension(40, 40));
 
-        jButton4.setIcon(new javax.swing.ImageIcon("up.ist.local\\Users\\cxg5334\\Desktop\\WhatsNext\\resources\\MenuMockup.png")); // NOI18N
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/whatsnext/MenuMockup.png"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -138,20 +138,21 @@ public class MenuUI extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(MenuUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(NavUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(MenuUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(NavUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(MenuUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(NavUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(MenuUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(NavUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new MenuUI().setVisible(true);
+                new NavUI().setVisible(true);
             }
         });
     }

@@ -120,7 +120,7 @@
     <Component class="javax.swing.JButton" name="jButton3">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="\\up.ist.local\Users\cxg5334\Desktop\WhatsNext\resources\UserButton.png"/>
+          <Image iconType="3" name="/whatsnext/UserButton.png"/>
         </Property>
         <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[40, 40]"/>
@@ -130,7 +130,7 @@
     <Component class="javax.swing.JButton" name="jButton4">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="\\up.ist.local\Users\cxg5334\Desktop\WhatsNext\resources\MenuMockup.png"/>
+          <Image iconType="3" name="/whatsnext/MenuMockup.png"/>
         </Property>
       </Properties>
     </Component>
